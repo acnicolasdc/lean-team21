@@ -1,7 +1,7 @@
 import card from "@/assets/images/cards/card_legend_default.png";
 
-const WIDTH = 200;
-const HEIGHT = 300;
+const WIDTH = 300;
+const HEIGHT = WIDTH + WIDTH / 2;
 
 const UserCard = () => {
   return (
@@ -9,7 +9,6 @@ const UserCard = () => {
       style={{
         width: WIDTH,
         height: HEIGHT,
-        backgroundColor: "red",
         position: "relative",
       }}
     >
@@ -19,11 +18,24 @@ const UserCard = () => {
           color: "white",
           fontWeight: "bold",
           top: HEIGHT * 0.1,
-          left: WIDTH * 0.22,
+          left: WIDTH * 0.24,
           fontSize: "1.3em",
         }}
       >
         88
+      </p>
+      <p
+        style={{
+          position: "absolute",
+          color: "white",
+          fontWeight: "bold",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          fontSize: WIDTH / 18,
+        }}
+      >
+        Nicolás Reyes
       </p>
       <img
         src={card}
