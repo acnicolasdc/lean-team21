@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import user from "@/assets/images/users/default.png";
+import customer from "@/assets/images/customers/p44.png";
 
 const UserCard = () => {
   const card = useRef<HTMLDivElement>(null);
@@ -14,8 +15,8 @@ const UserCard = () => {
     <div
       className="container"
       onMouseOver={(e) => {
-        let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
-        let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
+        let xAxis = (window.innerWidth / 2 - e.pageX) / 35;
+        let yAxis = (window.innerHeight / 2 - e.pageY) / 35;
         if (null !== card.current) {
           card.current.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
         }
@@ -25,10 +26,10 @@ const UserCard = () => {
           card.current.style.transition = "all 0.3s ease";
         }
         if (null !== title.current) {
-          title.current.style.transform = "translateZ(150px)";
+          title.current.style.transform = "translateZ(25px)";
         }
         if (null !== image.current) {
-          image.current.style.transform = "translateZ(200px) rotate(-5deg)";
+          image.current.style.transform = "translateZ(50px) rotate(-1deg)";
         }
       }}
       onMouseLeave={() => {
@@ -45,6 +46,11 @@ const UserCard = () => {
       }}
     >
       <div className="card" ref={card}>
+        <div className="company">
+          <h1>98</h1>
+          <h3>FS</h3>
+          <img alt="customer" src={customer} className="smooth" />
+        </div>
         <div className="sneaker">
           <div className="circle"></div>
           <img src={user} alt="user" ref={image} className="smooth" />
@@ -55,13 +61,13 @@ const UserCard = () => {
           </h1>
           <h3 ref={description}>PROJECT44 SENIOR DEVELOPER</h3>
           <div className="sizes">
-            <button>39</button>
-            <button>40</button>
-            <button className="active">42</button>
-            <button>44</button>
+            <button>95</button>
+            <button>99</button>
+            <button className="active">70</button>
+            <button>99</button>
           </div>
           <div className="purchase">
-            <button ref={purchase}>Purchase</button>
+            <button ref={purchase}>Detail</button>
           </div>
         </div>
       </div>
