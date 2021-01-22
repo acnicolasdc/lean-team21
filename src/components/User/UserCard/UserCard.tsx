@@ -1,4 +1,6 @@
 import { useRef } from "react";
+import { FiArrowUp, FiArrowDown } from "react-icons/fi";
+import { FcBadDecision } from "react-icons/fc";
 import user from "@/assets/images/users/default.png";
 import customer from "@/assets/images/customers/p44.png";
 
@@ -47,9 +49,12 @@ const UserCard = () => {
     >
       <div className="card" ref={card}>
         <div className="company">
-          <h1>98</h1>
+          <h1>91</h1>
           <h3>FS</h3>
           <img alt="customer" src={customer} className="smooth" />
+        </div>
+        <div className="state">
+          <FcBadDecision size={35} />
         </div>
         <div className="sneaker">
           <div className="circle"></div>
@@ -59,12 +64,18 @@ const UserCard = () => {
           <h1 className="title smooth" ref={title}>
             Nicolás Reyes
           </h1>
-          <h3 ref={description}>PROJECT44 SENIOR DEVELOPER</h3>
+          <h3 ref={description}>SENIOR DEVELOPER</h3>
           <div className="sizes">
-            <button>95</button>
-            <button>99</button>
-            <button className="active">70</button>
-            <button>99</button>
+            <button>
+              PER 95 <FiArrowDown className="down" />
+            </button>
+            <button>
+              TYP 99 <FiArrowUp className="up" />
+            </button>
+            <button className="active">
+              ENG 70 <FiArrowUp className="up" />
+            </button>
+            <button>CHE 99</button>
           </div>
           <div className="purchase">
             <button ref={purchase}>Detail</button>
