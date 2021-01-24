@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/lean-team21/static/css/main.f3150538.chunk.css",
+    "main.js": "/lean-team21/static/js/main.84481f65.chunk.js",
+    "main.js.map": "/lean-team21/static/js/main.84481f65.chunk.js.map",
+    "runtime-main.js": "/lean-team21/static/js/runtime-main.e0a21059.js",
+    "runtime-main.js.map": "/lean-team21/static/js/runtime-main.e0a21059.js.map",
+    "static/js/2.8490096a.chunk.js": "/lean-team21/static/js/2.8490096a.chunk.js",
+    "static/js/2.8490096a.chunk.js.map": "/lean-team21/static/js/2.8490096a.chunk.js.map",
+    "static/js/3.7cad99df.chunk.js": "/lean-team21/static/js/3.7cad99df.chunk.js",
+    "static/js/3.7cad99df.chunk.js.map": "/lean-team21/static/js/3.7cad99df.chunk.js.map",
+    "index.html": "/lean-team21/index.html",
+    "static/css/main.f3150538.chunk.css.map": "/lean-team21/static/css/main.f3150538.chunk.css.map",
+    "static/js/2.8490096a.chunk.js.LICENSE.txt": "/lean-team21/static/js/2.8490096a.chunk.js.LICENSE.txt",
+    "static/media/default.fe0eb42d.png": "/lean-team21/static/media/default.fe0eb42d.png",
+    "static/media/p44.43f78483.png": "/lean-team21/static/media/p44.43f78483.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0a21059.js",
+    "static/js/2.8490096a.chunk.js",
+    "static/css/main.f3150538.chunk.css",
+    "static/js/main.84481f65.chunk.js"
+  ]
+}
