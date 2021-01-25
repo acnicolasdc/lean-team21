@@ -3,7 +3,6 @@ node_js:
   - lts/*
 cache: npm
 script:
-  - npm run test
   - npm run predeploy
   - npm run deploy
 deploy:
