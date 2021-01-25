@@ -11,7 +11,6 @@ const UserCard = () => {
   const image = useRef<HTMLImageElement>(null);
   const purchase = useRef<HTMLButtonElement>(null);
   const description = useRef<HTMLHeadingElement>(null);
-  const sizes = useRef<HTMLDivElement>(null);
 
   return (
     <div
