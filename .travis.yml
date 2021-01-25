@@ -3,9 +3,13 @@ node_js:
   - lts/*
 cache: npm
 script:
+  - npm run test
+  - npm run predeploy
   - npm run deploy
 deploy:
   provider: pages
-  local_dir: build
   skip_cleanup: true
-  github_token: 0f25b5d1e491b3189d266ddd509c6b46bc2a04c5
+  github_token: $github_token
+  local_dir: build
+  on:
+    branch: gh-pages
